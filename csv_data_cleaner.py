@@ -31,3 +31,17 @@ def clean_csv(file_path):
 
     except Exception as e:
         print(f"Error al procesar el archivo: {e}")
+
+
+def main():
+
+    print("=== CLI CSV Data Cleaner ===")
+    print("Limpia datos en un archivo csv, eliminando filas vacias y espacios extra.")
+
+    file_path = input("Ingrese la ruta del archivo csv: ").strip()
+
+    clean_csv(file_path)
+
+
+if __name__ == "__main__":
+    main()
